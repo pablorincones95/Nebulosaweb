@@ -3,7 +3,7 @@ const app = express();
 
 const hbs = require('hbs');
 
-require('./hbs/helpers.js');
+require('./hbs/helpers');
 
 app.use(express.static(__dirname + '/public'));
 
@@ -13,11 +13,35 @@ app.set('view engine', 'hbs');
 
 //rutas
 app.get('/', (req, res) => {
-  res.render('index');
+  res.render('index', {
+    title: 'Inicio',
+    description: 'diseño grafico y web de otro planeta',
+    banner: './assets/img/banner.jpg'
+  });
 });
 
 app.get('/nosotros', (req, res) => {
-  res.render('nosotros');
+  res.render('nosotros', {
+    title: 'Nosotros',
+    description: 'diseño grafico y web de otro planeta',
+    banner: './assets/img/banner.jpg'
+  });
+});
+
+app.get('/servicios', (req, res) => {
+  res.render('servicios', {
+    title: 'Servicios',
+    description: 'diseño grafico y web de otro planeta',
+    banner: './assets/img/banner.jpg'
+  });
+});
+
+app.get('/contactanos', (req, res) => {
+  res.render('contactanos', {
+    title: 'Contactanos',
+    description: 'diseño grafico y web de otro planeta',
+    banner: './assets/img/banner.jpg'
+  });
 });
 
 //port server
