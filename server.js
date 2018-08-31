@@ -16,7 +16,7 @@ app.get('/', (req, res) => {
   res.render('index', {
     title: 'Inicio',
     description: 'diseño grafico y web de otro planeta',
-    banner: './assets/img/banner.jpg'
+    banner: './assets/img/spaces.jpg'
   });
 });
 

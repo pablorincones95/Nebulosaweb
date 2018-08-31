@@ -1,16 +1,23 @@
-<header>
+<header class="main-header">
   <nav>
-    <img src="" alt="">
-    <ul>
-      <li><a href="/">Inicio</a></li>
-      <li><a href="/nosotros">Nosotros</a></li>
-      <li><a href="/servicios">Servicios</a></li>
-      <li><a href="/contactanos">Contáctanos</a></li>
-      <li><button><a href="/contactanos">Escribenos</a></button></li>
-    </ul>
+    <div class="nav-wrapper">
+      <a style="padding-left:1rem" href="#!" class="brand-logo">NEBULOSA</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="/">Inicio</a></li>
+        <li><a href="/nosotros">Nosotros</a></li>
+        <li><a href="/servicios">Servicios</a></li>
+        <li><a href="/contactanos">Contáctanos</a></li>
+         <li><a class="waves-effect waves-light btn">Escríbenos</a></li>
+      </ul>
+    </div>
   </nav>
 
-  <div class="banner">
-    <img src="{{banner}}" alt="{{banner}}">
-  </div>
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="/">Inicio</a></li>
+    <li><a href="/nosotros">Nosotros</a></li>
+    <li><a href="/servicios">Servicios</a></li>
+    <li><a href="/contactanos">Contáctanos</a></li>
+    <li><a class="waves-effect waves-light btn">Escríbenos</a></li>
+  </ul>
 </header>
