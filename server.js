@@ -24,7 +24,7 @@ app.get('/nosotros', (req, res) => {
   res.render('nosotros', {
     title: 'Nosotros',
     description: 'diseño grafico y web de otro planeta',
-    banner: './assets/img/banner.jpg'
+    banner: './assets/img/nosotros.svg'
   });
 });
 

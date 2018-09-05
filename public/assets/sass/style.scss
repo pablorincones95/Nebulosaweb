@@ -1,39 +1,70 @@
-@charset "UTF-8";
-// Color
-@import "theme/color-variables";
-@import "theme/color-classes";
-// Variables;
-@import "theme/variables";
-// Reset
-@import "base/normalize";
-//layout
-@import "layout/grid";
-//theme
-@import "theme/global";
-@import "theme/typography";
-//modules
-@import "modules/badges";
-@import "modules/icons-material-design";
-@import "modules/navbar";
-@import "modules/transitions";
-@import "modules/cards";
-@import "modules/toast";
-@import "modules/tabs";
-@import "modules/tooltip";
-@import "modules/buttons";
-@import "modules/dropdown";
-@import "modules/waves";
-@import "modules/modal";
-@import "modules/collapsible";
-@import "modules/chips";
-@import "modules/materialbox";
-// @import "components/forms/forms";
-@import "modules/table_of_contents";
-@import "modules/sidenav";
-@import "modules/preloader";
-@import "modules/slider";
-@import "modules/carousel";
-@import "modules/tapTarget";
-@import "modules/pulse";
-@import "modules/datepicker";
-@import "modules/timepicker";
+// Template style
+
+/* Required height of parents of the Half Page Carousel for proper displaying carousel itself */
+
+html,
+body,
+.view {
+  height: 100%;
+}
+
+// Required height of of Full Page Intro for proper displaying on on mobile devices
+@media (max-width: 740px) {
+  .full-page-intro {
+    height: 1000px;
+  }
+}
+
+
+
+/* Half Page Carousel itself*/
+
+.carousel {
+  height: 50%;
+  .carousel-inner {
+    height: 100%;
+    .carousel-item,
+    .active {
+      height: 100%;
+    }
+  }
+}
+
+
+
+/* Adjustment for mobile devices*/
+
+@media (max-width: 776px) {
+  .carousel {
+    height: 100%;
+  }
+}
+
+
+
+/* Navbar animation */
+
+.navbar {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.top-nav-collapse {
+  background-color: #1C2331;
+}
+
+
+/* Adding color to the Navbar on mobile */
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+    background-color: #1C2331;
+  }
+}
+
+
+
+/* Footer color for sake of consistency with Navbar */
+
+.page-footer {
+  background-color: #1C2331;
+}
