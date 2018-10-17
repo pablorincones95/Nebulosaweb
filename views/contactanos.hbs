@@ -6,12 +6,14 @@
 <body>
 
   {{>navbar}}
-
+  {{>secundary_banner}}
   <main>
     <div class="container">
-      <section class="mt-5 wow fadeIn">
-  <!-- Form with header -->
-        <div class="card">
+       <!-- Section: Contact v.3 -->
+      <section class="contact-section ">
+
+        <!-- Form with header -->
+        <div class="card my-5 animated rotateInUpLeft slow">
 
           <!-- Grid row -->
           <div class="row">
@@ -91,7 +93,7 @@
 
                   <!-- Grid column -->
                   <div class="col-md-12 text-center">
-                    <button class="btn btn-primary"><i class="fa fa-rocket mr-2"></i> Enviar</button>
+                    <button class="btn main">Enviar <i class="far fa-paper-plane ml-2"></i></button>
                   </div>
                   <!-- Grid column -->
 
@@ -106,48 +108,34 @@
             <!-- Grid column -->
             <div class="col-lg-4">
 
-              <div class="card-body contact text-center h-100 ">
-
+              <div class="card-body contact h-100 ">
                 <h3 class="my-4 pb-2">Información de contacto</h3>
-                <ul class="text-lg-left list-unstyled ml-4">
+
+                <ul class="list-unstyled ml-4">
                   <li>
-                    <p><i class="fa fa-map-marker pr-2"></i>New York, 94126, USA</p>
-                  </li>
-                  <li>
-                    <p><i class="fa fa-phone pr-2"></i>+ 01 234 567 89</p>
+                    <i class="fab fa-whatsapp"></i> {{phone}}
                   </li>
                   <li>
-                    <p><i class="fa fa-envelope pr-2"></i>contact@example.com</p>
+                    <i class="far fa-envelope"></i> {{email}} 
                   </li>
-                </ul>
-                <hr class="hr-light my-4">
-                <ul class="list-inline text-center list-unstyled">
-                  <li class="list-inline-item">
-                    <a class="p-2 fa-lg tw-ic">
-                      <i class="fab fa-facebook-f"></i>
-                    </a>
+                  <li>
+                    <a href="{{fc}}" target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a>
                   </li>
-                  <li class="list-inline-item">
-                    <a class="p-2 fa-lg li-ic">
-                      <i class="fab fa-instagram"></i>
-                    </a>
+                  <li>
+                    <a href="{{ins}}" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
                   </li>
                 </ul>
 
               </div>
 
             </div>
-            <!-- Grid column -->
-
+        
           </div>
-          <!-- Grid row -->
-
+        
         </div>
-        <!-- Form with header -->
-
+      
       </section>
-
-      <br><br>
+  
     </div>
   </main>
 

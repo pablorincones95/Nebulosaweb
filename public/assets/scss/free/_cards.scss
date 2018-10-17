@@ -1,0 +1,68 @@
+// Cards
+.card {
+  box-shadow: $z-depth-2;
+  border: 0;
+  font-weight: 400;
+  border-radius: 1.5rem;
+  &[class*="border"] {
+    border: 1px solid $grey-base;
+    box-shadow: none;
+  }
+  .view {
+    border-radius: 1.5rem;
+    box-shadow: $z-depth-2;
+  }
+  .card-body {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-weight: 400;
+    }
+    .card-title {
+      a {
+        transition: $md-card-link-transition;
+        &:hover {
+          transition: $md-card-link-transition;
+        }
+      }
+    }
+    .card-text {
+      color: $md-card-text-color;
+      font-size: $md-card-font-size;
+      font-weight: 400;
+    }
+    &.contact {
+      background: $purple-darken-4;
+      color: #ffffff;
+      border-radius: 0 1.5rem 1.5rem 0;
+      ul {
+        li {
+          margin-bottom: 10px;
+          a {
+            color: #ffffff;
+            &:hover {
+              color: red;
+            }
+          }
+          svg {
+            font-size: 1.2rem;
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .card {
+    .card-body {
+      &.contact {
+        border-radius: 0 0 1.5rem 1.5rem;
+      }
+    }
+  }
+}

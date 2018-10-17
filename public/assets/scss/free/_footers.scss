@@ -1,0 +1,39 @@
+// Footers
+footer {
+  &.page-footer {
+    background: #0d0d0d;
+    bottom: 0;
+    color: $white-base;
+    .container-fluid {
+      width: auto;
+    }
+    .list-unstyled {
+      li {
+        margin-bottom: 10px;
+      }
+    }
+    .contact {
+      ul {
+        li {
+          margin-bottom: 10px;
+          svg {
+            font-size: 1.2rem;
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+    .footer-copyright {
+      overflow: hidden;
+      background-color: #000000;
+      ;
+      color: $footer-copyright-color;
+    }
+    a {
+      color: $white-base;
+      &:hover {
+        color: #d32f2f;
+      }
+    }
+  }
+}

@@ -5,11 +5,18 @@ hbs.registerHelper('getAnio', () => {
   return new Date().getFullYear();
 })
 
-hbs.registerHelper('capitalize', (text) => {
-  let words = text.split(' ');
-  words.forEach((word, idx) => {
-    words[idx] = word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
-  });
+hbs.registerHelper('fc', () => {
+  return 'https://www.facebook.com/NebulosaWebDesign/';
+});
 
-  return words.join(' ');
-})
+hbs.registerHelper('ins', () => {
+  return 'https://www.instagram.com/nebulosaweb/';
+});
+
+hbs.registerHelper('email', () => {
+  return 'nebulosawebdesign@gmail.com';
+});
+
+hbs.registerHelper('phone', () => {
+  return '+584245755070';
+});

@@ -18,7 +18,7 @@ app.get('/', (req, res) => {
   res.render('index', {
     title: 'Inicio',
     description: 'diseño grafico y web de otro planeta',
-    banner: './assets/img/spaces.jpg'
+    banner: './assets/img/nosotros.svg'
   });
 });
 
@@ -26,7 +26,8 @@ app.get('/nosotros', (req, res) => {
   res.render('nosotros', {
     title: 'Nosotros',
     description: 'diseño grafico y web de otro planeta',
-    banner: './assets/img/nosotros.svg'
+    banner: './assets/img/banner-secundary.svg',
+    banner_title: 'Nosotros'
   });
 });
 
@@ -34,7 +35,8 @@ app.get('/servicios', (req, res) => {
   res.render('servicios', {
     title: 'Servicios',
     description: 'diseño grafico y web de otro planeta',
-    banner: './assets/img/banner.jpg'
+    banner: './assets/img/banner-secundary.svg',
+    banner_title: 'Servicios'
   });
 });
 
@@ -42,7 +44,8 @@ app.get('/contactanos', (req, res) => {
   res.render('contactanos', {
     title: 'Contactanos',
     description: 'diseño grafico y web de otro planeta',
-    banner: './assets/img/banner.jpg'
+    banner: './assets/img/banner-secundary.svg',
+    banner_title: 'Contáctanos'
   });
 });
 
